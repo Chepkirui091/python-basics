@@ -8,3 +8,11 @@ num2 = 3.14 # float
 result = num1 + num2  # The integer is implicitly converted to a float
 print("Result:", result)
 print("Type of result:", type(result))  # Output will be a float
+
+#Explicit Type Casting (Manual Type Conversion)
+# Explicit type casting is when you manually convert a value from one data type to another using built-in functions. For example:
+# Converting a string to an integer
+num_str = "42"
+num_int = int(num_str)  # Explicitly converting string to integer
+print("String:", num_str)
+print("Integer:", num_int)

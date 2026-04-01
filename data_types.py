@@ -116,4 +116,76 @@ print("Type:", type(person))
 #Sets (unordered collections of unique elements) A set is an unordered collection of unique elements. Sets are defined using curly braces {} or the set() function. They are commonly used for membership testing and eliminating duplicate entries.
 fruits = {"apple", "banana", "cherry"}
 print("Set:", fruits)
-print("Type:", type(fruits))
+print("Type:", type(fruits)) #NB they may not be in the same order as they were defined because sets are unordered collections
+#Only immutable data types can be added to a set, so you cannot add lists or dictionaries to a set, but you can add tuples.
+
+#Python none type
+#The None type is a special data type in Python that represents the absence of a value or a null value. It is often used to indicate that a variable has no value or that a function does not return anything.
+result = None
+print("None value:", result)
+print("Type:", type(result))
+
+
+#Setting data types
+#In Python, you can set the data type of a variable using type hints. Type hints are optional and do not affect the actual behavior of the code, but they can help with code readability and provide hints to developers and tools about the expected data types.
+#You can use type hints to specify the expected data type of a variable when you declare it
+name: str = "Alice"
+age: int = 30
+height: float = 5.8
+print("Name:", name)
+print("Age:", age)  
+print("Height:", height)
+print("Type of name:", type(name))
+print("Type of age:", type(age))
+print("Type of height:", type(height))
+
+
+
+# Primitive data types in Python include:
+# - int: Represents integer numbers (e.g., 1, 42, -5)
+# - float: Represents floating-point numbers (e.g., 3.14, -0.001)
+# - bool: Represents boolean values (True or False)     
+# - str: Represents strings (e.g., "Hello, World!") 
+
+# Non-primitive data types in Python include:
+# - list: Represents an ordered collection of items (e.g., [1, 2, 3], ["apple", "banana", "cherry"])
+# - tuple: Represents an ordered, immutable collection of items (e.g., (1, 2, 3), ("apple", "banana", "cherry"))
+# - dict: Represents a collection of key-value pairs (e.g., {"name": "Alice", "age": 30})
+# - set: Represents an unordered collection of unique items (e.g., {"apple", "banana", "cherry"})   
+
+# Python Data Type Conversion
+# You can convert between different data types using built-in functions like int(), float(), str(), list(), tuple(), dict(), and set(). For example:
+# Converting string to integer
+num_str = "42"
+num_int = int(num_str)
+print("String:", num_str)
+print("Integer:", num_int)
+# Converting integer to float
+num_float = float(num_int)
+print("Integer:", num_int)
+print("Float:", num_float)
+# Converting float to string
+num_str_from_float = str(num_float)
+print("Float:", num_float)
+print("String:", num_str_from_float)
+
+#Data Type Conversion Functions
+# int(): Converts a value to an integer
+# float(): Converts a value to a floating-point number
+# str(): Converts a value to a string
+# list(): Converts a value to a list
+# tuple(): Converts a value to a tuple
+# dict(): Converts a value to a dictionary
+# set(): Converts a value to a set
+# frozenset(): Converts a value to a frozenset (an immutable set) 
+# bool(): Converts a value to a boolean
+# complex(): Converts a value to a complex number
+# bytes(): Converts a value to a bytes object
+# bytearray(): Converts a value to a bytearray object
+# memoryview(): Converts a value to a memoryview object
+# ord(): Converts a character to its Unicode code point (integer)
+# chr(): Converts an integer to its corresponding Unicode character (string)    
+# unichr(): Converts an integer to its corresponding Unicode character (string) (Python 2.x only)
+# ord(): Converts a character to its Unicode code point (integer) (Python 2.x only)
+# hex(): Converts an integer to a hexadecimal string
+# oct(): Converts an integer to an octal string

@@ -84,5 +84,5 @@ except AttributeError:
 # Access using methods
 print("Your account balance is: ", account.get_balance())   # ✓ 1000
 
-account.withdraw(500)
+account.deposit(500)
 print("Your account balance after deposit is: ", account.get_balance())  # ✓ 1500

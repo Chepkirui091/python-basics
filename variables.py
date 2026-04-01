@@ -86,4 +86,4 @@ print(f"{name} is {age} years old.")
 greeting = "Hello, " + name + "!"
 print(greeting)
 
-#
+#Python Local Variables are defined inside a function. We can not access variable outside the function.
